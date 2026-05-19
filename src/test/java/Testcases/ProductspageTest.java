@@ -22,6 +22,8 @@ public class ProductspageTest extends baseTest
 		catch(Exception e)
 		{
 			System.out.println(e);
+			System.out.println("CONFLICT TEST FOR GIT");
 		}
+
 	}
 }
