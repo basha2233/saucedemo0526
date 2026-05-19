@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-09T21:59:07 IST" name="Suite" finished-at="2026-05-09T21:59:18 IST" duration-ms="10741">
+  <suite started-at="2026-05-18T21:28:54 IST" name="Suite" finished-at="2026-05-18T21:29:35 IST" duration-ms="40512">
     <groups>
     </groups>
-    <test started-at="2026-05-09T21:59:07 IST" name="Test" finished-at="2026-05-09T21:59:18 IST" duration-ms="10741">
+    <test started-at="2026-05-18T21:28:54 IST" name="Test" finished-at="2026-05-18T21:29:35 IST" duration-ms="40512">
       <class name="Testcases.HomepageTest">
-        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:Testcases.HomepageTest@2b662a77]" started-at="2026-05-09T21:59:08 IST" name="loadBrowser" finished-at="2026-05-09T21:59:15 IST" duration-ms="6980" status="PASS">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:Testcases.HomepageTest@4562e04d]" started-at="2026-05-18T21:28:55 IST" name="loadBrowser" finished-at="2026-05-18T21:28:58 IST" duration-ms="3614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadBrowser -->
-        <test-method signature="Title()[pri:1, instance:Testcases.HomepageTest@2b662a77]" started-at="2026-05-09T21:59:15 IST" name="Title" finished-at="2026-05-09T21:59:15 IST" duration-ms="208" status="FAIL">
+        <test-method signature="Title()[pri:1, instance:Testcases.HomepageTest@4562e04d]" started-at="2026-05-18T21:28:58 IST" name="Title" finished-at="2026-05-18T21:28:59 IST" duration-ms="130" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -24,7 +24,7 @@ at org.testng.asserts.Assertion$7.doAssert(Assertion.java:146)
 at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
 at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
 at org.testng.asserts.Assertion.fail(Assertion.java:142)
-at Testcases.HomepageTest.Title(HomepageTest.java:32)
+at Testcases.HomepageTest.Title(HomepageTest.java:31)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -57,17 +57,45 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Title -->
-        <test-method signature="login()[pri:2, instance:Testcases.HomepageTest@2b662a77]" started-at="2026-05-09T21:59:15 IST" name="login" finished-at="2026-05-09T21:59:17 IST" duration-ms="1194" status="PASS">
+        <test-method signature="Verify_Login(java.lang.String,java.lang.String)[pri:2, instance:Testcases.HomepageTest@4562e04d]" started-at="2026-05-18T21:29:00 IST" name="Verify_Login" data-provider="loginData" finished-at="2026-05-18T21:29:01 IST" duration-ms="899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="quitdriver()[pri:0, instance:Testcases.HomepageTest@2b662a77]" started-at="2026-05-09T21:59:17 IST" name="quitdriver" finished-at="2026-05-09T21:59:17 IST" duration-ms="35" status="PASS">
+        </test-method> <!-- Verify_Login -->
+        <test-method signature="Verify_Login(java.lang.String,java.lang.String)[pri:2, instance:Testcases.HomepageTest@4562e04d]" started-at="2026-05-18T21:29:01 IST" name="Verify_Login" data-provider="loginData" finished-at="2026-05-18T21:29:02 IST" duration-ms="837" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login -->
+        <test-method is-config="true" signature="quitdriver()[pri:0, instance:Testcases.HomepageTest@4562e04d]" started-at="2026-05-18T21:29:02 IST" name="quitdriver" finished-at="2026-05-18T21:29:02 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitdriver -->
       </class> <!-- Testcases.HomepageTest -->
       <class name="Testcases.ProductspageTest">
-        <test-method signature="cart()[pri:3, instance:Testcases.ProductspageTest@6069db50]" started-at="2026-05-09T21:59:17 IST" name="cart" finished-at="2026-05-09T21:59:18 IST" duration-ms="1062" status="PASS">
+        <test-method signature="cart()[pri:3, instance:Testcases.ProductspageTest@459e9125]" started-at="2026-05-18T21:29:02 IST" name="cart" finished-at="2026-05-18T21:29:35 IST" duration-ms="32745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cart -->

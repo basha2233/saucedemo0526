@@ -8,8 +8,8 @@
     <classes>
       <class name="Testcases.HomepageTest">
         <methods>
-          <include name="Title"/>
           <include name="quitdriver"/>
+          <include name="Title"/>
           <include name="loadBrowser"/>
         </methods>
       </class> <!-- Testcases.HomepageTest -->

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -117,12 +117,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testcases.ProductspageTest" class="method navigator-link" hash-for-method="cart">cart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Testcases.HomepageTest" class="method navigator-link" hash-for-method="Verify_Login(visual_user, secret_sauce)">Verify_Login(visual_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testcases.HomepageTest" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Testcases.HomepageTest" class="method navigator-link" hash-for-method="Verify_Login(standard_user, secret_sauce)">Verify_Login(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testcases.ProductspageTest" class="method navigator-link" hash-for-method="cart">cart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -149,7 +154,7 @@
                   </a> <!-- Title -->
                   <span class="method-name">Title</span>
                   <div class="stack-trace">java.lang.AssertionError: null
-	at Testcases.HomepageTest.Title(HomepageTest.java:32)
+	at Testcases.HomepageTest.Title(HomepageTest.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -157,21 +162,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Testcases.HomepageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -183,6 +173,30 @@
                   <a name="cart">
                   </a> <!-- cart -->
                   <span class="method-name">cart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Testcases.HomepageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Login(visual_user, secret_sauce)">
+                  </a> <!-- Verify_Login(visual_user, secret_sauce) -->
+                  <span class="method-name">Verify_Login</span>
+                  <span class="parameters">(visual_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Login(standard_user, secret_sauce)">
+                  </a> <!-- Verify_Login(standard_user, secret_sauce) -->
+                  <span class="method-name">Verify_Login</span>
+                  <span class="parameters">(standard_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -243,24 +257,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'Testcases.HomepageTest')
-data.setCell(0, 3, 1194);
+data.setCell(0, 1, 'cart')
+data.setCell(0, 2, 'Testcases.ProductspageTest')
+data.setCell(0, 3, 32745);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'cart')
-data.setCell(1, 2, 'Testcases.ProductspageTest')
-data.setCell(1, 3, 1062);
+data.setCell(1, 1, 'Verify_Login')
+data.setCell(1, 2, 'Testcases.HomepageTest')
+data.setCell(1, 3, 899);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Title')
+data.setCell(2, 1, 'Verify_Login')
 data.setCell(2, 2, 'Testcases.HomepageTest')
-data.setCell(2, 3, 208);
+data.setCell(2, 3, 837);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Title')
+data.setCell(3, 2, 'Testcases.HomepageTest')
+data.setCell(3, 3, 130);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -295,22 +313,26 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Title</span>
-                <span class="method-start">7018 ms</span>
+                <span class="method-start">3664 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">login</span>
-                <span class="method-start">7522 ms</span>
+                <span class="method-name">Verify_Login(standard_user, secret_sauce)</span>
+                <span class="method-start">5445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_Login(visual_user, secret_sauce)</span>
+                <span class="method-start">6352 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitdriver</span>
-                <span class="method-start">8797 ms</span>
+                <span class="method-start">7197 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testcases.ProductspageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">cart</span>
-                <span class="method-start">8842 ms</span>
+                <span class="method-start">7202 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

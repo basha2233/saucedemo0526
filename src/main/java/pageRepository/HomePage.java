@@ -6,9 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import base.baseTest;
 import dev.failsafe.internal.util.Assert;
+import utils.Utils;
 
 public class HomePage extends baseTest
 
@@ -35,18 +38,14 @@ public class HomePage extends baseTest
 		
 	}
 	
-	public void Verify_Login()
-	{
-		try {
-			username.sendKeys("standard_user");	
-			password.sendKeys("secret_sauce");
-			loginbtn.click();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	}
+	
+		/*
+		 * public void Verify_Login() { try { username.sendKeys("standard_user");
+		 * password.sendKeys("secret_sauce"); loginbtn.click(); } catch (Exception e) {
+		 * // TODO Auto-generated catch block e.printStackTrace(); }
+		 * 
+		 * }
+		 */
 	
 	
 }
